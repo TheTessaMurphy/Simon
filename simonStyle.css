@@ -1,0 +1,260 @@
+
+
+body{
+  background: #d3f8d3;
+}
+#header{
+  font-family: 'Bevan', cursive;
+  font-size: 5em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+#bigBox{
+position: relative;
+margin-bottom: 4%; color: red;
+}
+
+.outer{display: inline-block;}
+.inner{display: inline-block; padding-left:0;}
+
+.buttons {
+  text-align: center;
+}
+
+#cover{
+  position: absolute; 
+  visibility: hidden; 
+  display: block; 
+  top: 0; 
+  left: 0;
+  background: black; 
+  height: 102%; 
+  width: 100%;
+  z-index = 99; 
+  opacity: .9; 
+  text-align: center; 
+  padding-top: 47%; 
+  font-family: 'Mogra', cursive; 
+  font-size: 350%; }
+
+#msg{
+  opacity: 1.0;}
+
+#start{
+  
+  background: green; 
+  box-shadow: 3px 3px 30px  yellow inset;
+  border: 2px solid silver;
+  border-radius: 100%;  
+  height: 70px;
+  width: 70px;
+  outline: none;
+  font-size: 110%;
+  color: white;
+  letter-spacing: 1px;
+  margin-right 25px;
+}
+
+#start:active{
+  font-size: 98%;
+  font-weight: bold;
+  
+  box-shadow: 1px 1px 15px	#2F4F4F inset;
+  border: 2px solid gray;  
+}
+
+#stop{
+  
+  background: red; 
+  box-shadow: 3px 3px 30px  yellow inset;
+  border: 2px solid silver;
+  border-radius: 100%;  
+  height: 70px;
+  width: 70px;
+  outline: none;
+  font-size: 110%; 
+  letter-spacing: 1px;
+  color: white;
+  margin-left: 25px;
+}
+
+#stop:active{
+  font-size: 98%;
+  //font-weight: bold;
+  text: 2px; 
+  box-shadow: 2px 2px 19px  gray inset;
+  border: 2px solid gray;  
+}
+
+.row{
+  text-align: center;
+  
+}
+
+#counter{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 4px solid red;
+  border-style: ridge;
+  font-family: 'VT323', monospace;
+  background: black;
+  font-size: 700%;
+  color: red;
+  line-height: 100px;
+  vertical-align: middle;
+   padding: 0;
+}
+/*  *  *  * C H E C K B O X *  *  *  */ 
+.section {
+  font-family: "Bevan, cursive";
+  height: 100px;
+  width: 150px;
+  font-size: 150%;
+  color: #B22222;
+  margin-left: auto;
+  margin-right: auto;
+  align-text: center;
+  z-index: 0;
+  
+  
+}
+.section input[type="checkbox"],
+.section input[type="checkbox"]{
+  display: none;
+  
+}
+.chkBox {
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  
+}
+.chkBox label {
+  position: relative;
+  
+}
+
+/* Base styles for spans */
+.chkBox span::before,
+.chkBox span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* checkbox buttons */
+.chkBox span.checkbox:hover {
+  cursor: pointer;
+}
+
+
+.chkBox span.checkbox::before { /*holder*/
+  left: -62px;
+  width: 46px;
+  height: 26px;
+  background-color: silver/*#A8AAC1*/;
+  border-radius: 2px;
+  border-color: gray;
+  border-style: inset;
+}
+.chkBox span.checkbox::after {
+  left: -59px;
+  width: 18px;
+  height: 18px;
+  border-radius: 1px;
+  background-color: #6C788A;
+  border: 1px outset silver;
+  transition: left .01s, background-color .01s;
+}
+input[type="checkbox"]:checked + label span.checkbox::after {
+  left: -37px;
+  background-color: #B22222/*#EBFF43*/;
+  border: 1px outset red;
+}
+
+ /* * * * * * PLAY BUTTONS* * * * */
+ 
+#btnContainer{
+  padding-top: 10px;
+  z-index: 0;
+  width: 310px;
+  margin-right: auto;
+  margin-left: auto;
+ 
+}
+
+#btnsStartStop{
+  width: 180px; 
+  margin-right: auto; 
+  margin-left: auto; 
+  margin-top: 50px;
+}
+ 
+.push{
+  box-shadow: 1px 2px 12px  white inset;
+  border: 14px solid black;
+  border-radius: 0%;  
+  height: 150px;
+  width: 150px;
+  margin: -2px;
+  outline: none !important;
+}
+ 
+.blue{
+  background: blue; 
+  border-radius: 150px 0 0 0;
+ 
+}
+
+.blue:active, .active1{
+  background-color:	#00BFFF;
+  box-shadow: 4px 4px 60px 15px blue inset;
+  
+}
+
+.yellow{
+  background: goldenrod; 
+  border-radius: 0 0 150px 0;
+}
+
+.yellow:active, .active4{
+  background-color: yellow;
+  box-shadow: 4px 4px 60px 15px goldenrod inset;
+}
+
+.red{
+  background:	#B22222; 
+  border-radius: 0 0 0 150px;
+}
+
+.red:active, .active3{
+  background-color: #FF4500;
+  box-shadow: 4px 4px 60px 15px #B22222 inset;
+    
+}
+
+.green{
+  background: 	#228B22; 
+  border-radius: 0 150px 0 0;
+}
+
+.green:active, .active2{
+  background-color: #ADFF2F;
+  box-shadow: 4px 4px 60px 15px ForestGreen inset;
+}
+
+#footer{
+  border-top: 2px solid teal;
+  text-align: center;
+  font-family: 'bevan';  
+  font-size: 120%;
+  padding-top: 2%;
+  
+}
